@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfileActivity">
+
+    <TextView
+        android:id="@+id/userProfileDisplayName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileErrorMessage"
+        tools:text="Display name" />
+
+    <ImageView
+        android:id="@+id/userProfileProfilePicture"
+        android:layout_width="@dimen/profilePictureWidth"
+        android:layout_height="@dimen/profilePictureHeight"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileDisplayName"
+        app:srcCompat="@drawable/ic_broken_image"
+        android:contentDescription="@string/profilePictureDescription" />
+
+    <TextView
+        android:id="@+id/userProfileUserId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileProfilePicture"
+        tools:text="userid12345" />
+
+    <TextView
+        android:id="@+id/userProfileLastLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileUserId"
+        tools:text="Last login MM/MM/MMMM" />
+
+    <TextView
+        android:id="@+id/userProfileErrorMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="No user selected"
+        android:textColor="?attr/colorError"/>
+
+    <TextView
+        android:id="@+id/userProfileLibraryGamesLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/libraryGamesLabel"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userConsolePlaceholder" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userProfileLibraryList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileLibraryPlaceholder" />
+
+    <TextView
+        android:id="@+id/userProfileWishListGameLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/wishListGameLabel"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileLibraryList" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userProfileWishList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileWishListPlaceholder" />
+
+    <TextView
+        android:id="@+id/userProfileLibraryPlaceholder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileLibraryGamesLabel"
+        tools:text="No games in library" />
+
+    <TextView
+        android:id="@+id/userProfileWishListPlaceholder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileWishListGameLabel"
+        tools:text="No Games in wishlist" />
+
+    <TextView
+        android:id="@+id/userPreferredConsoleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/preferredConsoles"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileLastLogin" />
+
+    <ImageView
+        android:id="@+id/userConsoleOne"
+        android:layout_width="@dimen/consoleIconSize"
+        android:layout_height="@dimen/consoleIconSize"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPreferredConsoleLabel"
+        app:srcCompat="@drawable/ic_downloading"
+        android:contentDescription="@string/consoleIcon" />
+
+    <ImageView
+        android:id="@+id/userConsoleTwo"
+        android:layout_width="@dimen/consoleIconSize"
+        android:layout_height="@dimen/consoleIconSize"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/userConsoleOne"
+        app:layout_constraintTop_toBottomOf="@+id/userPreferredConsoleLabel"
+        app:srcCompat="@drawable/ic_downloading"
+        android:contentDescription="@string/consoleIcon"/>
+
+    <ImageView
+        android:id="@+id/userConsoleThree"
+        android:layout_width="@dimen/consoleIconSize"
+        android:layout_height="@dimen/consoleIconSize"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/userConsoleTwo"
+        app:layout_constraintTop_toBottomOf="@+id/userPreferredConsoleLabel"
+        app:srcCompat="@drawable/ic_downloading"
+        android:contentDescription="@string/consoleIcon"/>
+
+    <ImageView
+        android:id="@+id/userConsoleFour"
+        android:layout_width="@dimen/consoleIconSize"
+        android:layout_height="@dimen/consoleIconSize"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/userConsoleThree"
+        app:layout_constraintTop_toBottomOf="@+id/userPreferredConsoleLabel"
+        app:srcCompat="@drawable/ic_downloading"
+        android:contentDescription="@string/consoleIcon"/>
+
+    <TextView
+        android:id="@+id/userConsolePlaceholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userConsoleOne"
+        tools:text="No consoles selected" />
+</androidx.constraintlayout.widget.ConstraintLayout>

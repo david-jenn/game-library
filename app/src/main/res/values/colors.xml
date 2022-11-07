@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="unselected">#E5E4E2</color>
+    <color name="disabled">#848884</color>
+    <color name="selected">#00ffbf</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- primary color -->
+    <color name="orange_900">#e55202</color>
+    <color name="orange_800">#ee6d03</color>
+    <color name="orange_700">#f47c03</color>
+    <color name="orange_600">#fa8c04</color>
+    <color name="orange_500">#fe9805</color>
+    <color name="orange_400">#fea728</color>
+    <color name="orange_300">#feb74e</color>
+    <color name="orange_200">#fecc81</color>
+    <color name="orange_100">#ffe0b2</color>
+
+    <!-- complementary color -->
+    <color name="blue_900">#0942a9</color>
+    <color name="blue_800">#0961c8</color>
+    <color name="blue_700">#0772da</color>
+    <color name="blue_600">#0384ee</color>
+    <color name="blue_500">#0092fc</color>
+    <color name="blue_400">#34a2fe</color>
+    <color name="blue_300">#5cb3fd</color>
+    <color name="blue_200">#8cc8fe</color>
+    <color name="blue_100">#b9ddfe</color>
+
+    <!-- reds -->
+    <color name="red_300">#E57373</color>
+    <color name="red_500">#F44336</color>
+    <color name="red_700">#D32F2F</color>
+
+    <!-- black and white -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+</resources>

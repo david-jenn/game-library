@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/actionGameList"
+        android:title="Games"
+        android:icon="@drawable/ic_videogame"
+        />
+    <item android:id="@+id/actionUserList"
+        android:title="Users"
+        android:icon="@drawable/ic_people"/>
+</menu>

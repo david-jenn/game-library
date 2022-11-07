@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Consoles-->
+    <dimen name="consoleIconSize">20dp</dimen>
+
+    <!--Profile-->
+    <dimen name="profilePictureWidth">250dp</dimen>
+    <dimen name="profilePictureHeight">250dp</dimen>
+    <dimen name="galleryButtonSize">50dp</dimen>
+    <dimen name="cameraButtonSize">50dp</dimen>
+
+    <dimen name="consoleChooserButtonSize">75dp</dimen>
+    <dimen name="ebaySummarySize">200dp</dimen>
+    <dimen name="gameThumbnailWidth">160dp</dimen>
+    <dimen name="gameThumbnailHeight">160dp</dimen>
+    <dimen name="libraryButtonSize">50dp</dimen>
+    <dimen name="wishlistButtonSize">50dp</dimen>
+    <dimen name="listConsoleIconSize">20dp</dimen>
+    <dimen name="reviewPictureSize">20dp</dimen>
+    <dimen name="gameDetailsPictureWidth">0dp</dimen>
+    <dimen name="gameDetailsPictureHeight">0dp</dimen>
+    <dimen name="detailsScreenShotWidth">0dp</dimen>
+    <dimen name="detailsScreenShotHeight">0dp</dimen>
+
+    <dimen name="thumbnailWidthResize">300dp</dimen>
+    <dimen name="thumbnailHeightResize">200dp</dimen>
+    <dimen name="detailsBannerWidthResize">600dp</dimen>
+    <dimen name="detailsBannerHeightResize">600dp</dimen>
+    <dimen name="screenShotWidthResize">600dp</dimen>
+    <dimen name="screenshotHeightResize">600dp</dimen>
+    <dimen name="reviewPictureResize">400dp</dimen>
+    <dimen name="profileListPictureSize">60dp</dimen>
+    <dimen name="userListPictureResize">200dp</dimen>
+    <dimen name="profilePictureResize">400dp</dimen>
+    <dimen name="ebayPictureResize">400dp</dimen>
+    <dimen name="homeListWidth">200dp</dimen>
+
+
+    <integer name="gameListColumns">1</integer>
+    <integer name="userListColumns">1</integer>
+    <integer name="ebayListColumns">2</integer>
+</resources>

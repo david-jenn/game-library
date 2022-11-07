@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="homeListWidth">400dp</dimen>
+    <dimen name="gameThumbnailWidth">160dp</dimen>
+    <dimen name="gameThumbnailHeight">160dp</dimen>
+
+    <integer name="gameListColumns">1</integer>
+</resources>

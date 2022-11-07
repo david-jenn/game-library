@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/xboxButton"
+        android:layout_width="@dimen/consoleChooserButtonSize"
+        android:layout_height="@dimen/consoleChooserButtonSize"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/unselected_color_list"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_xbox_outline"
+        android:contentDescription="@string/xboxButtonDescription" />
+
+    <ImageButton
+        android:id="@+id/playstationButton"
+        android:layout_width="@dimen/consoleChooserButtonSize"
+        android:layout_height="@dimen/consoleChooserButtonSize"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/unselected_color_list"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/xboxButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_playstation_outline"
+        android:contentDescription="@string/playstationButtonDescription"/>
+
+    <ImageButton
+        android:id="@+id/switchButton"
+        android:layout_width="@dimen/consoleChooserButtonSize"
+        android:layout_height="@dimen/consoleChooserButtonSize"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/unselected_color_list"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/playstationButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_nintendo_switch_outline"
+        android:contentDescription="@string/switchButtonDescription"/>
+
+    <ImageButton
+        android:id="@+id/computerButton"
+        android:layout_width="@dimen/consoleChooserButtonSize"
+        android:layout_height="@dimen/consoleChooserButtonSize"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/unselected_color_list"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/switchButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_computer_outline"
+        android:contentDescription="@string/computerButtonDescription"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

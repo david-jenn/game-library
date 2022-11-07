@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/cardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_review_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/gameImage"
+            android:layout_width="@dimen/gameThumbnailWidth"
+            android:layout_height="@dimen/gameThumbnailHeight"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/gameImageContentDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gameTitle"
+            app:srcCompat="@drawable/ic_broken_image" />
+
+        <TextView
+            android:id="@+id/gameTitle"
+            style="@style/headingStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="8dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Game Title" />
+
+        <TextView
+            android:id="@+id/gameDeveloper"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gameDescription"
+            tools:text="Game Developer" />
+
+        <TextView
+            android:id="@+id/gamePublisher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gameDeveloper"
+            tools:text="Game Publisher" />
+
+        <TextView
+            android:id="@+id/gameDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gameConsoleOne"
+            tools:text="Game Description" />
+
+        <ImageButton
+            android:id="@+id/gameLibraryButton"
+            style="@style/WidgetOverlay.Primary"
+            android:layout_width="@dimen/libraryButtonSize"
+            android:layout_height="@dimen/libraryButtonSize"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/gameLibraryButtonDescription"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/gameWishlistButton"
+            app:layout_constraintTop_toBottomOf="@+id/gameImage"
+            app:srcCompat="@drawable/ic_library_outline" />
+
+        <ImageButton
+            android:id="@+id/gameWishlistButton"
+            style="@style/WidgetOverlay.Primary"
+            android:layout_width="@dimen/wishlistButtonSize"
+            android:layout_height="@dimen/wishlistButtonSize"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/gameWIshListButtonDescription"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toStartOf="@+id/gameLibraryButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gameImage"
+            app:srcCompat="@drawable/ic_wishlist_outline" />
+
+        <ImageView
+            android:id="@+id/gameConsoleOne"
+            android:layout_width="@dimen/consoleIconSize"
+            android:layout_height="@dimen/consoleIconSize"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/consoleIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gameWishlistButton"
+            app:srcCompat="@drawable/ic_downloading" />
+
+        <ImageView
+            android:id="@+id/gameConsoleTwo"
+            android:layout_width="@dimen/consoleIconSize"
+            android:layout_height="@dimen/consoleIconSize"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/consoleIcon"
+            app:layout_constraintStart_toEndOf="@+id/gameConsoleOne"
+            app:layout_constraintTop_toBottomOf="@+id/gameWishlistButton"
+            app:srcCompat="@drawable/ic_downloading" />
+
+        <ImageView
+            android:id="@+id/gameConsoleThree"
+            android:layout_width="@dimen/consoleIconSize"
+            android:layout_height="@dimen/consoleIconSize"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/consoleIcon"
+            app:layout_constraintStart_toEndOf="@+id/gameConsoleTwo"
+            app:layout_constraintTop_toBottomOf="@+id/gameWishlistButton"
+            app:srcCompat="@drawable/ic_downloading" />
+
+        <ImageView
+            android:id="@+id/gameConsoleFour"
+            android:layout_width="@dimen/consoleIconSize"
+            android:layout_height="@dimen/consoleIconSize"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/consoleIcon"
+            app:layout_constraintStart_toEndOf="@+id/gameConsoleThree"
+            app:layout_constraintTop_toBottomOf="@+id/gameWishlistButton"
+            app:srcCompat="@drawable/ic_downloading" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

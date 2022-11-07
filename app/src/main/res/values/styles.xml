@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ErrorText">
+        <item name="android:textColor">?attr/colorError</item>
+    </style>
+
+    <style name="WidgetOverlay" />
+    <style name="WidgetOverlay.Primary">
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="strokeColor">?attr/colorPrimaryVariant</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+    <style name="WidgetOverlay.Secondary">
+        <item name="backgroundTint">?attr/colorSecondary</item>
+        <item name="strokeColor">?attr/colorSecondaryVariant</item>
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+    </style>
+    <style name="WidgetOverlay.Error">
+        <item name="backgroundTint">?attr/colorError</item>
+        <item name="strokeColor">?attr/colorError</item>
+        <item name="android:textColor">?attr/colorOnError</item>
+    </style>
+
+    <style name="headingStyle">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="cardViewStyle">
+        <item name="cardElevation">30dp</item>
+        <item name="cardCornerRadius">15dp</item>
+    </style>
+
+</resources>

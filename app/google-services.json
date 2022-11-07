@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "128681269300",
+    "project_id": "game-library-david-jenn",
+    "storage_bucket": "game-library-david-jenn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128681269300:android:b1f2bb25e3a3b528e69261",
+        "android_client_info": {
+          "package_name": "edu.ranken.david_jenn.game_library"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "128681269300-2mctbbc92h2n5elkcccjifu1p0o86mns.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.ranken.david_jenn.game_library",
+            "certificate_hash": "eec35777f1230adc8dd6c4a088a6ac18c71eaa64"
+          }
+        },
+        {
+          "client_id": "128681269300-qls0dkt08g2dnuca1tbv1rorbgtvjloa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.ranken.david_jenn.game_library",
+            "certificate_hash": "2ad5e60ef76909b90fcf0a9b46ffe9d9732c4375"
+          }
+        },
+        {
+          "client_id": "128681269300-e84q8do7okatp36h8fu4qbl56fb3ghr4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZYqHDBA8j7wpBep7z97Dq_WkmWYAzDE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "128681269300-e84q8do7okatp36h8fu4qbl56fb3ghr4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

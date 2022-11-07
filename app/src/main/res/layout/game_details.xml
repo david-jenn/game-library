@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameDetailsActivity">
+
+    <TextView
+        android:id="@+id/detailsError"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Error Message"
+        android:textColor="?attr/colorError"/>
+
+    <TextView
+        android:id="@+id/detailsTitle"
+        style="@style/headingStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsError"
+        tools:text="Game Title" />
+
+
+    <TextView
+        android:id="@+id/detailsDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsLink"
+        tools:text="This is the description" />
+
+    <ImageView
+        android:id="@+id/detailsMainImage"
+        android:layout_width="@dimen/gameDetailsPictureWidth"
+        android:layout_height="@dimen/gameDetailsPictureHeight"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/gameScreenshot"
+        app:layout_constraintDimensionRatio="w,2:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsTitle"
+        app:srcCompat="@drawable/ic_broken_image" />
+
+    <TextView
+        android:id="@+id/detailsControllerSupport"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsDescription"
+        tools:text="Controller Support: " />
+
+    <TextView
+        android:id="@+id/detailsMultiplayerSupport"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsControllerSupport"
+        tools:text="Multiplayer Support" />
+
+    <TextView
+        android:id="@+id/detailsGenres"
+        android:layout_width="@dimen/testDimen"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsMultiplayerSupport"
+        tools:text="Genres" />
+
+    <TextView
+        android:id="@+id/detailsTags"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsGenres"
+        tools:text="#Tags " />
+
+    <ImageView
+        android:id="@+id/detailsConsoleOne"
+        android:layout_width="@dimen/consoleIconSize"
+        android:layout_height="@dimen/consoleIconSize"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsTags"
+        app:srcCompat="@drawable/ic_broken_image"
+        android:contentDescription="@string/consoleIcon" />
+
+    <ImageView
+        android:id="@+id/detailsConsoleTwo"
+        android:layout_width="@dimen/consoleIconSize"
+        android:layout_height="@dimen/consoleIconSize"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/detailsConsoleOne"
+        app:layout_constraintTop_toBottomOf="@+id/detailsTags"
+        app:srcCompat="@drawable/ic_broken_image"
+        android:contentDescription="@string/consoleIcon" />
+
+    <ImageView
+        android:id="@+id/detailsConsoleThree"
+        android:layout_width="@dimen/consoleIconSize"
+        android:layout_height="@dimen/consoleIconSize"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/detailsConsoleTwo"
+        app:layout_constraintTop_toBottomOf="@+id/detailsTags"
+        app:srcCompat="@drawable/ic_broken_image"
+        android:contentDescription="@string/consoleIcon" />
+
+    <ImageView
+        android:id="@+id/detailsConsoleFour"
+        android:layout_width="@dimen/consoleIconSize"
+        android:layout_height="@dimen/consoleIconSize"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/detailsConsoleThree"
+        app:layout_constraintTop_toBottomOf="@+id/detailsTags"
+        app:srcCompat="@drawable/ic_broken_image"
+        android:contentDescription="@string/consoleIcon" />
+
+    <TextView
+        android:id="@+id/detailsScreenShotsLabel"
+        style="@style/headingStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/detailScreenShotLabel"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsConsoleFour" />
+
+    <ImageView
+        android:id="@+id/detailsScreenShotOne"
+        android:layout_width="@dimen/detailsScreenShotWidth"
+        android:layout_height="@dimen/detailsScreenShotHeight"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/gameScreenshot"
+        app:layout_constraintDimensionRatio="w,2:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsScreenShotsLabel"
+        app:srcCompat="@drawable/ic_broken_image" />
+
+    <ImageView
+        android:id="@+id/detailsScreenShotTwo"
+        android:layout_width="@dimen/detailsScreenShotWidth"
+        android:layout_height="@dimen/detailsScreenShotHeight"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/gameScreenshot"
+        app:layout_constraintDimensionRatio="w,2:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsScreenShotOne"
+        app:srcCompat="@drawable/ic_broken_image" />
+
+    <ImageView
+        android:id="@+id/detailsScreenShotThree"
+        android:layout_width="@dimen/detailsScreenShotWidth"
+        android:layout_height="@dimen/detailsScreenShotHeight"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/gameScreenshot"
+        app:layout_constraintDimensionRatio="w,2:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsScreenShotTwo"
+        app:srcCompat="@drawable/ic_broken_image" />
+
+    <ImageView
+        android:id="@+id/detailsScreenShotFour"
+        android:layout_width="@dimen/detailsScreenShotWidth"
+        android:layout_height="@dimen/detailsScreenShotHeight"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/gameScreenshot"
+        app:layout_constraintDimensionRatio="w,2:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsScreenShotThree"
+        app:srcCompat="@drawable/ic_broken_image" />
+
+    <ImageView
+        android:id="@+id/detailsScreenShotFive"
+        android:layout_width="@dimen/detailsScreenShotWidth"
+        android:layout_height="@dimen/detailsScreenShotHeight"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/gameScreenshot"
+        app:layout_constraintDimensionRatio="w,2:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsScreenShotFour"
+        app:srcCompat="@drawable/ic_broken_image" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/detailsReviewList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsReviewError" />
+
+    <TextView
+        android:id="@+id/detailsReviewLabel"
+        style="@style/headingStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/reviewLabel"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsScreenShotFive" />
+
+    <TextView
+        android:id="@+id/detailsReviewError"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsReviewCount" />
+
+    <TextView
+        android:id="@+id/detailsLinkLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/link"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsAvgPrice" />
+
+    <TextView
+        android:id="@+id/detailsLink"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:autoLink="web"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/detailsLinkLabel"
+        app:layout_constraintTop_toBottomOf="@+id/detailsAvgPrice"
+        tools:text="https://abc.com" />
+
+    <TextView
+        android:id="@+id/detailsAvgPriceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/avgPriceLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsMainImage" />
+
+    <TextView
+        android:id="@+id/detailsAvgPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/detailsAvgPriceLabel"
+        app:layout_constraintTop_toBottomOf="@+id/detailsMainImage"
+        tools:text="$MM.MM" />
+
+    <TextView
+        android:id="@+id/detailsReviewCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="5 reviews"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsReviewLabel"
+        tools:text="5 reviews" />
+</androidx.constraintlayout.widget.ConstraintLayout>
